@@ -1,0 +1,54 @@
+
+
+
+
+
+
+
+/*--------------------------   contador y boton para agregar al carritto -------------------------------*/
+
+.count {
+    width: 150px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'buttonmenos buttonmenos nro buttonmas buttonmas'
+    'buttonagregar buttonagregar buttonagregar buttonagregar buttonagregar';
+    row-gap: 8px;
+}
+.button-mas{
+    grid-area: buttonmas;
+}
+.nro-count {
+    grid-area: nro;
+}
+.button-menos {
+    grid-area: buttonmenos;
+}
+.button-agregar-carrito{
+    grid-area: buttonagregar;
+}
+.nro-count { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-menos, .button-mas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #F63;
+    background-color: white;
+    border: solid 1px #ff9572;
+    border-radius: 4px;
+}
+
+.button-agregar-carrito {
+    color: white;
+    background-color: #F63;
+    padding: 8px;
+    border-radius: 9px;
+}

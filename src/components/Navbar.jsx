@@ -4,6 +4,7 @@ import CartWidget from './CartWidget'
 import '../estilos/navbar.css'
 
 const Navbar = () => {
+
     return (
         <div className='navbar'>
             <div>

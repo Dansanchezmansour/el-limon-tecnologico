@@ -1,26 +1,33 @@
-
 import React from 'react'
 import { Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react'
 import { BsSearch } from 'react-icons/bs'
-import { AiOutlineArrowDown } from 'react-icons/ai'
+import { MdOutlineKeyboardArrowLeft } from 'react-icons/md'
 
-const Categorias = () => {
+
+const Categorias = () => {  
+
   return (
     <div className='categorias'>
+
       <Menu>
-        <MenuButton><div className='menu-categorias'>Categorias<AiOutlineArrowDown className='flecha'/></div></MenuButton>
+        <MenuButton>
+          <div className='menu-categorias'>
+            <span>Categorias</span>
+            <span><MdOutlineKeyboardArrowLeft className='flecha' /></span>
+          </div>
+        </MenuButton>
         <MenuList>
-          <MenuItem as='a' href='#'>Computers</MenuItem>
-          <MenuItem as='a' href='#'>Phones</MenuItem>
-          <MenuItem as='a' href='#'>Watches</MenuItem>
-          <MenuItem as='a' href='#'>Gadges</MenuItem>
+          <MenuItem className='categoria' as='a' href='#'>Computers</MenuItem>
+          <MenuItem className='categoria' as='a' href='#'>Phones</MenuItem>
+          <MenuItem className='categoria' as='a' href='#'>Watches</MenuItem>
+          <MenuItem className='categoria' as='a' href='#'>Gadges</MenuItem>
         </MenuList>
       </Menu>
 
       <div className='buscador'>
         <input type="text" placeholder='Escriba para buscar' />
         <button>
-          <BsSearch />
+          <BsSearch className='lupita' />
         </button>
       </div>
 
