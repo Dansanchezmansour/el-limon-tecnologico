@@ -1,8 +1,54 @@
 
 
+.container h1 {
+    font-size: 40px;
+    letter-spacing: 10px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+}
 
+/*  -------------------------------------------- cards --------------------------------------------*/
 
+.contenedor-cards {
+    
+    padding: 60px 60px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 90px 40px;
+    
+}
 
+.card {
+    height: 260px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texto-card {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-card h2{
+    
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.texto-card span {
+    color: grey;
+}
+
+.texto-card .precio {
+    color: #F63;
+    font-size: 25px;
+    font-weight: 900;
+}
 
 
 /*--------------------------   contador y boton para agregar al carritto -------------------------------*/
@@ -46,7 +92,7 @@
     border-radius: 4px;
 }
 
-.button-agregar-carrito {
+.button-agregar-carrito, .ver-detalle {
     color: white;
     background-color: #F63;
     padding: 8px;

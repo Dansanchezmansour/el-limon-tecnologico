@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import '../estilos/cards.css'
 import { useToast } from '@chakra-ui/react'
 
 
@@ -12,6 +11,8 @@ const ItemCount = () => {
     const toast = useToast()
 
     const addToCart = () => {
+
+
         if (count > 1) {
             toast({
                 title: 'Felicitaciones!',
@@ -22,7 +23,7 @@ const ItemCount = () => {
             })
         }
 
-        else if(count == 1){
+        else if (count == 1) {
             toast({
                 title: 'Felicitaciones!',
                 description: `Has agregado ${count} producto al carrito`,
@@ -31,21 +32,9 @@ const ItemCount = () => {
                 isClosable: true,
             })
         }
-        else{
+        else {
             alert('Debes marcar una cantidad mayor a 0 para añadir al carrito')
-
         }
-
-
-        /*  if(count > 1){
-             alert(`Has agregado ${count} productos al carrito`)
-         }
-         else if(count == 1){
-             alert(`Has agregado ${count} producto al carrito`)
-         }
-         else {
-             alert('Debes marcar una cantidad mayor a 0 para añadir al carrito')
-         } */
     }
 
 

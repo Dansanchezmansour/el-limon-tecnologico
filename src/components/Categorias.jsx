@@ -2,9 +2,11 @@ import React from 'react'
 import { Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react'
 import { BsSearch } from 'react-icons/bs'
 import { MdOutlineKeyboardArrowLeft } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 
-const Categorias = () => {  
+const Categorias = () => {
+
 
   return (
     <div className='categorias'>
@@ -17,11 +19,19 @@ const Categorias = () => {
           </div>
         </MenuButton>
         <MenuList>
-          <MenuItem className='categoria' as='a' href='#'>Computers</MenuItem>
-          <MenuItem className='categoria' as='a' href='#'>Phones</MenuItem>
-          <MenuItem className='categoria' as='a' href='#'>Watches</MenuItem>
-          <MenuItem className='categoria' as='a' href='#'>Gadges</MenuItem>
-        </MenuList>
+
+
+          <Link to='/category/computers'><MenuItem className='categoria' as='a' href='#'>Computers</MenuItem></Link>
+
+          <Link to='/category/phones'><MenuItem className='categoria' as='a' href='#'>Phones</MenuItem></Link>
+
+          <Link to='/category/watches'><MenuItem className='categoria' as='a' href='#'>Watches</MenuItem></Link>
+
+          <Link to='/category/gadget'><MenuItem className='categoria' as='a' href='#'>Gadget</MenuItem></Link>
+
+
+        </MenuList >
+
       </Menu>
 
       <div className='buscador'>
@@ -31,7 +41,7 @@ const Categorias = () => {
         </button>
       </div>
 
-    </div>
+    </div >
   )
 }
 
